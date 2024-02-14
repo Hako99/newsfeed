@@ -50,10 +50,18 @@ public class Board extends Timestemped {
     }
 
     public void update(BoardRequestDto boardRequestDto) {
-        this.title = boardRequestDto.getTitle();
-        this.body = boardRequestDto.getBody();
-        this.category = boardRequestDto.getCategory();
-        this.cookLevel = Integer.parseInt(boardRequestDto.getCookLevel());
+        if (boardRequestDto.getTitle() != null) {
+            this.title = boardRequestDto.getTitle();
+        }
+        if (boardRequestDto.getBody() != null) {
+            this.title = boardRequestDto.getBody();
+        }
+        if (boardRequestDto.getCategory() != null) {
+            this.title = boardRequestDto.getCategory();
+        }
+        if (boardRequestDto.getCookLevel() != null) {
+            this.cookLevel = Integer.parseInt(boardRequestDto.getCookLevel());
+        }
     }
 
 }

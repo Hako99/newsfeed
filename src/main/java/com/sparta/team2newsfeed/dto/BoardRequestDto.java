@@ -2,7 +2,9 @@ package com.sparta.team2newsfeed.dto;
 
 import com.sparta.team2newsfeed.entity.User;
 import jakarta.validation.constraints.Pattern;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
 public class BoardRequestDto {

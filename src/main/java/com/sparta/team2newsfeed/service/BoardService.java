@@ -9,6 +9,7 @@ import com.sparta.team2newsfeed.entity.Category;
 import com.sparta.team2newsfeed.entity.User;
 import com.sparta.team2newsfeed.imp.UserDetailsImpl;
 import com.sparta.team2newsfeed.repository.BoardRepository;
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
